@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<title>Using jQuery</title>
+			<link rel="stylesheet" href="style.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script>
+			
+			$(document).ready(function(){
+				$(".pay").on("click",function(){
+					$("#mytik").slideDown();
+				});
+			});
+			
+			$(document).ready(function(){
+				$(".clos").on("click",function(){
+					$("#mytik").hide();
+				});
+			});
+			</script>
+		</head>
+	<body>
+	<a name="home"></a>
+		<div class="cover">
+			<nav>
+				<ul>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#band">BAND</a></li>
+					<li><a href="#tour">TOUR</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+					<li><a href="#">MORE&nbsp;<i class="fa fa-caret-down"style="font-size:15px;"></i></a>
+						<div class="sub">
+							<ul>
+								<li><a href="#">Merchandise</a></li>
+								<li><a href="#">Extras</a></li>
+								<li><a href="#">Media</a></li>
+							</ul>
+						</div>
+					</li>
+					<i class="fa fa-search" style="float:right;padding:15px 25px;color:white;"></i>
+					</ul>
+			</nav>
+		</div>
+		<img src="gettyimages-94282088_wide-0324340508477ea682c3ab64197e898a4966d266.jpg" style="width:100%;height:200%;">
+		<div class="para">
+		<a name="band"></a>
+			<h1 style="text-align:center;">THE BAND</h1>
+				<p style="text-align:center;margin:25px;color:grey;">We love music</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="img">
+			<div class="name">
+			<p style="text-align:center;">Name</p>
+			<img src="news_preview_mob_image__preview_7214.png" style="width:210px;padding:6px;border-radius:15px;filter:grayscale(100%);">
+			</div>
+			<div class="name">
+			<p style="text-align:center;">Name</p>
+			<img src="news_preview_mob_image__preview_7214.png" style="width:210px;padding:6px;border-radius:15px;filter:grayscale(100%);">
+			</div>
+			<div class="name">
+			<p style="text-align:center;">Name</p>
+			<img src="news_preview_mob_image__preview_7214.png" style="width:210px;padding:6px;border-radius:15px;filter:grayscale(100%);">
+			</div>
+			</div>
+		</div>
+<!-----------------------------------------------------------------Ticket Modal CSS and jQuery--------------------------------------------------------------->
+		<div class="tickets" id="mytik">
+			<div class="tik">
+			<p style="text-align:center;padding:45px;font-size:2.20em;"><i class="fa fa-briefcase"></i>&nbsp;Tickets</p>
+			</div>
+			<form><br/><br/>
+			<label style="width:100%;margin-top:5px;">
+			<i class="fa fa-shopping-cart"></i>&nbsp;Tickets, $15 per person
+			</label>
+			<input type="text" name="how" placeholder="How many?"><br/><br/>
+			<label><i class="fa fa-user icon"></i>&nbsp;Send To</label>
+			<input type="text" name="mail" placeholder="Enter email">
+			<button><i class="fa fa-check"></i>&nbsp;PAY</button>
+			</form>
+			<button class="clos">Close&nbsp;<i class="fa fa-close"></i></button><a href="#" style="color:navy;float:right;margin-right:2%;">Need&nbsp;help?</a>
+		</div>
+		
+<!--------------------------------------------------------------------Modal End----------------------------------------------------------------------------------->
+		
+		<a name="tour"></a>
+		<div class="tour" style="background-color:black;height:750px;margin-top:5%;">
+			<div class="date">
+				<h1 style="color:white;text-align:center;margin:1%;padding:35px;">TOUR DATES</h1>
+				<p style="color:grey;text-align:center;margin-top:1%;margin-bottom:2%;font-size:18px;"><i>Remember to book your tickets!</i></p>
+				<form>
+					<input type="text" name="sep" placeholder="September"><br/>
+					<input type="text" name="oct" placeholder="October"><br/>
+					<input type="text" name="nov" placeholder="November"><br/>
+				</form>
+			</div>
+			<div class="card">
+				<div class="tic">
+					<img src="news_preview_mob_image__preview_7214.png" style="width:100%;height:200px;">
+				<div class="txt">
+					<p style="margin-bottom:3%;font-weight:bold;font-size:16px;">New York</p>
+					<p style="margin-top:3%;margin-bottom:3%;color:grey;font-size:16px;">Fri 27 Nov 2016</p>
+					<p style="line-height:1.60em;">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+					<button class="pay" id="mypay">Buy Tickets</button>
+				</div>
+				</div>
+				
+				<div class="tic">
+					<img src="news_preview_mob_image__preview_7214.png" style="width:100%;height:200px;">
+				<div class="txt">
+					<p style="margin-bottom:3%;font-weight:bold;font-size:16px;">Paris</p>
+					<p style="margin-top:3%;margin-bottom:3%;color:grey;font-size:16px;">Sat 28 Nov 2016</p>
+					<p style="line-height:1.60em;">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+					<button class="pay" id="mypay">Buy Tickets</button>
+				</div>
+				</div>
+				<div class="tic">
+					<img src="news_preview_mob_image__preview_7214.png" style="width:100%;height:200px;">
+				<div class="txt">
+					<p style="margin-bottom:3%;font-weight:bold;font-size:16px;">San Fransico</p>
+					<p style="margin-top:3%;margin-bottom:3%;color:grey;font-size:16px;">Sun 29 Nov 2016</p>
+					<p style="line-height:1.60em;">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+					<button class="pay" id="mypay">Buy Tickets</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		<a name="contact"></a>
+		<div>
+		<h1 style="text-align:center;margin-top:2%;">CONTACT</h1><br/>
+		<p style="color:grey;text-align:center;"><i>Fan?Drop a note!</i></p>
+		<div class="contact">
+			<div class="add">
+			<i class="material-icons" style="font-size:20px;">place</i>&nbsp;&nbsp;&nbsp;Chicago,US<br/>
+			<i class="material-icons" style="font-size:20px;">local_phone</i>&nbsp;&nbsp;&nbsp;Phone:+00151515<br/>
+			<i class="material-icons" style="font-size:20px;">local_post_office</i>&nbsp;&nbsp;&nbsp;Email:mail@mail.com
+			</div>
+			<div class="form">
+			<span style="display:inline-flex;">
+			<input type="text" name="name" placeholder="Name">
+			<input type="text" name="mail" placeholder="Email"></span><br/>
+			<input type="text" name="msg" placeholder="Message"><br/>
+			<button class="btn">Send</button>
+			</div>
+		</div>
+		</div>
+		<img src="31023.jpg" style="width:100%;filter:grayscale(100%);">
+		<div class="footer" style="padding:25px;text-align:center;color:white;font-size:16px;height:200px;">
+		<p><a href="#" class="fa fa-facebook" style="color:grey;font-size:25px;text-decoration:none;"></a>&nbsp; <a href="#" class="fa fa-instagram" style="color:grey;font-size:25px;text-decoration:none;"></a>&nbsp; <a href="#" class="fa fa-snapchat-ghost" style="color:grey;font-size:25px;text-decoration:none;"></a>&nbsp;<a href="#" class="fa fa-twitter" style="color:grey;font-size:25px;text-decoration:none;"></a>&nbsp;<a href="#" class="fa fa-pinterest" style="color:grey;font-size:25px;text-decoration:none;"></a>&nbsp;<a href="#" class="fa fa-linkedin" style="color:grey;font-size:25px;text-decoration:none;"></a></p><br/>
+		<a style="color:grey;margin:5% 0;font-size:14px;">Powered By <a href="#" style="color:grey;font-size:14px;">Jayshee Negi</a></a>
+		
+		</div>
+	</body>
+</html>

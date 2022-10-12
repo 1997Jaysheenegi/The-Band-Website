@@ -1,0 +1,224 @@
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+body{
+	font-family:sans-serif;
+}
+.fa-search:hover{
+	background-color:red;
+}
+nav{
+	position:fixed;
+	width:100%;
+	z-index:999;
+}
+nav ul{
+	
+list-style-type:none;	
+background-color:rgba(0,0,0,0.80);
+}
+nav ul li{
+	display:inline-flex;
+}
+nav ul li a{
+	padding:14px 16px;
+	text-decoration:none;
+	color:white;
+}
+nav ul li a:hover{
+	background-color:lightgrey;
+	color:black;
+}
+.sub{
+	position:absolute;
+	margin-top:45px;
+	box-shadow:0 14px 15px 0 rgba(0,0,0,0.2),0 15px 18px 0 rgba(0,0,0,0.19);
+	border-radius:2px;
+	display:none;
+}
+.sub ul{
+	background-color:white;
+}
+.sub ul li{
+	display:block;
+}
+.sub ul li a{
+	display:inline-block;
+	color:black;
+	line-height:1.50em;
+}
+.sub ul li:hover{
+	background-color:lightgrey;
+}
+ul li:hover .sub{
+	display:block;
+}
+div.para{
+	text-align:justify;
+	margin:2% 25%;
+	width:750px;
+	line-height:1.60em;
+}
+div.img{
+	display:flex;
+	justify-content:center;
+	margin-top:5%;
+}
+/* Ticket Modal styling...*/
+div.tickets{
+	background-color:white;
+	width:950px;
+	height:470px;
+	margin:2% 25%;
+	box-shadow:0 5px 6px 0 rgba(0,0,0,0.2), 0 8px 10px 0 rgba(0,0,0,0.19);
+	display:none;
+	position:fixed;
+	z-index:1;
+	left:0;
+	top:0;
+}
+div.tik{
+	height:120px;
+	background-color:#008080;
+	color:white;
+}
+div.tickets form{
+	padding:20px;
+}
+.clos{
+	padding:10px;
+	background-color:#ee4b2b;
+	color:white;
+	font-size:16px;
+	border:none;
+	margin-left:2%;
+}
+.tickets .clos:hover{
+	background-color:lightgrey;
+	color:black;
+}
+div.tickets form input[type=text]{
+	width:100%;
+	padding:8px;
+	margin-top:6px;
+	font-size:16px;
+}
+div.tickets form button{
+	background-color:#008080;
+	width:100%;
+	margin-top:3%;
+	padding:14px;
+	border:none;
+	font-size:16px;
+	color:white;
+}
+div.tickets form button:hover{
+	background-color:lightgrey;
+	color:black;
+}
+/* Ticket Modal End*/
+div .tour{
+	background-color:black;
+}
+.card{
+	display:flex;
+	height:450px;
+	justify-content:center;
+}
+.card .tic{
+	width:15%;
+	height:90%;
+	background-color:white;
+	box-shadow:0 15px 16px 0 rgba(0,0,0,0.2),0 18px 20px 0 rgba(0,0,0,0.19);
+	margin-left:1%;
+	margin-right:1%;
+}
+.card .tic .txt{
+	padding:14px 16px;
+	font-size:14px;
+	line-height:1.60em;
+}
+.card .tic .txt button{
+	padding:10px;
+	margin-top:6%;
+	background-color:black;
+	color:white;
+	font-size:16px;
+	border:none;
+}
+.card .tic .txt button:hover{
+	background-color:lightgrey;
+	color:black;
+}
+.card .tic img:hover{
+	filter:grayscale(100%);
+	opacity:0.80;
+}
+.date{
+	width:950px;
+	height:220px;
+	margin:5% 20%;
+}
+div.date form{
+	width:742px;
+	margin-left:9%;
+	
+}
+div.date form input[type=text]{
+	width:100%;
+	padding:10px;
+	border:none;	
+	box-shadow:0 5px 6px 0 rgba(0,0,0,0.2),0 10px 12px 0 rgba(0,0,0,0.19);
+	outline:1px solid grey;
+	font-size:16px;
+}
+.contact{
+	height:300px;
+	display:flex;
+	justify-content:center;
+}
+.contact .add{
+	width:30%;	
+	height:70%;
+	padding:3% 5%;
+	line-height:1.20em;
+	font-size:18px;
+	margin-top:4%;
+}
+.contact .form{
+	width:30%;
+	height:70%;
+	padding:3% 5%;
+	line-height:1.20em;
+	font-size:18px;
+	margin-top:4%;
+}
+.contact .form span input[type=text]{
+	width:60%;
+	padding:5px;
+	margin:2%;
+	font-size:15px;
+}
+.contact .form input[type=text]{
+	width:97%;
+	padding:5px;
+	margin:2%;
+	font-size:15px;
+}
+.btn{
+	float:right;
+	margin:2%;
+	padding:10px;
+	text-align:center;
+	width:25%;
+	font-size:16px;
+	background-color:black;
+	color:white;
+	border:none;
+}
+.btn:hover{
+	background-color:lightgrey;
+	color:black;
+}
